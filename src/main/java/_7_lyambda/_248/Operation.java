@@ -3,7 +3,7 @@ package _7_lyambda._248;
 import java.util.function.DoubleBinaryOperator;
 
 public enum Operation {
-    PLUS("+", Double::sum),
+    PLUS("+", (x, y) -> x + y),
     MINUS("-", (x, y) -> x - y),
     TIMES("*", (x, y) -> x * y),
     DIVIDE("/", (x, y) -> x / y);
