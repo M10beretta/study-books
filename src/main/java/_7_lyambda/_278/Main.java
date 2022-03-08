@@ -12,11 +12,11 @@ import static java.time.temporal.ChronoField.MILLI_OF_SECOND;
 public class Main {
     public static void main(String[] args) {
         var now = LocalTime.now();
-        extracted1(); //136
+        extracted();
         System.out.println(Instant.now().get(MILLI_OF_SECOND)-now.get(MILLI_OF_SECOND));
     }
 
-    private static void extracted1() {
+    private static void extracted() {
         primes().map(p->TWO.pow(p.intValueExact()).subtract(ONE))
                 .filter(m->m.isProbablePrime(50))
                 .limit(10)

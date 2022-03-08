@@ -1,12 +1,27 @@
-import java.util.stream.Stream;
+import lombok.Data;
+import lombok.NonNull;
 
 public class Main {
     public static void main(String[] args) {
 
-        var integerStream = Stream.of(1, 2, 3, 4, 5);
+        int[] nums = {1, 2, 3, 4, 5};
+        Cat[] cats = {new Cat("A"),new Cat("B"),new Cat("C"),new Cat("D")};
 
-        var iterator = integerStream.iterator();
-
-        iterator.forEachRemaining(System.out::println);
     }
+
+
+    static int min(int firstArg, int... remainingArgs) {
+        int min = firstArg;
+        for (int arg : remainingArgs)
+            if (arg < min)
+                min = arg;
+        return min;
+    }
+}
+
+@Data
+class Cat {
+    @NonNull
+    private String name;
+    private int age;
 }
