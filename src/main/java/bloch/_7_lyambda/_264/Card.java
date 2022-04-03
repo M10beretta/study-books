@@ -1,4 +1,4 @@
-package _7_lyambda._264;
+package bloch._7_lyambda._264;
 
 record Card(Rank rank, Suit suit) implements Comparable<Card> {
 

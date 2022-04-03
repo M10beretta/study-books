@@ -1,4 +1,4 @@
-package _7_lyambda._264;
+package bloch._7_lyambda._264;
 
 public class Main {
 

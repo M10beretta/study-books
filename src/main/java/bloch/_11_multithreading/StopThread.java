@@ -1,4 +1,4 @@
-package _11_multithreading;
+package bloch._11_multithreading;
 
 import java.time.Duration;
 import java.time.LocalTime;
